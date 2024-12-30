@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            height:80vh;
+            
+        }
+    
+        #form label {
+            
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    
+        #form input[type="text"],
+        #form input[type="email"],
+        #form input[type="number"],
+        #form textarea,
+        #form select {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        #form input[type="radio"],
+        #form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    
+        #form input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        #form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form"action="" method="">
+        <label >Name</label>
+        <input type="text" name="name"> <br>
+        <label >E-mail</label>
+        <input type="email" name="Email"><br>
+        <label >Group#</label>
+        <input type="number" name="group"><br>
+        <label >Class details</label>
+        <textarea name="details" rows="5" cols="40"></textarea><br>
+        
+        <label >Gender</label>
+        <input type="radio" name="gender"value="female"> Female
+        <input type="radio" name="gender" value="male">Male<br>
+        <label >Select Courses</label>
+        <select name="Courses"  multiple>
+            <option value="html">HTML</option>
+            <option value="java script">JAVA SCRIPT</option>
+            <option value="php">PHP</option>
+            <option value="my sql">MY SQL</option>
+             </select><br>
+        <label >Agree</label>
+        <input type="checkbox"  name="agree" value="agree"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
